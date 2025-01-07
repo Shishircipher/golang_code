@@ -8,14 +8,16 @@ func main() {
 
 	const n = 45
 	fibN := fib(n) // slow
-	fmt.Printf("\rFibonacci(%d) = %d\n", n, fibN)
+//	fmt.Printf("\rFibonacci(%d) = %d\n", n, fibN)
+        fmt.Printf("Fibonacci(%d) = %d\n", n, fibN)
 
 }
 
 func spinner(delay time.Duration) {
 	for {
 		for _, r := range `-\|/`{
-			fmt.Printf("\r %c", r)
+//			fmt.Printf("\r %c", r)
+                        fmt.Printf("%c", r)
 			time.Sleep(delay)
 		}
 	}
